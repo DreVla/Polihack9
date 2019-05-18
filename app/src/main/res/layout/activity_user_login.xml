@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/user_login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meet new\n people based \non music you \nlove!"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/kodchas"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/user_facebook_login"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/user_login_text"
+        android:src="@drawable/facebook_login"
+        android:layout_marginBottom="-250dp"
+        android:layout_marginLeft="100dp"
+        android:clickable="true"
+        android:onClick="clickImage"/>
+
+    <ImageView
+        android:id="@+id/user_instagram_login"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@id/user_facebook_login"
+        android:layout_alignBottom="@id/user_login_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="-150dp"
+        android:layout_marginBottom="-250dp"
+        android:src="@drawable/instagram_login"
+        android:clickable="true"
+        android:onClick="clickImage"/>
+</RelativeLayout>
